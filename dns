@@ -1,4 +1,0 @@
-$ dig +noall +answer mkomkov.ru
-;mkomkov.ru.
-mkomkov.ru.   73  IN  A 192.30.252.153
-mkomkov.ru.   73  IN  A 192.30.252.154
