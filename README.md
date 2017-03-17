@@ -1,2 +1,2 @@
-# mkomkov.github.io
+# mkomkov.ru
 Мой сайт для Unibrains
