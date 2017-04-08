@@ -41,7 +41,6 @@ ga('ecommerce:addTransaction', {
   'revenue': '1300',               // Grand Total.
   'shipping': '',                  // Shipping.
   'tax': '',                     // Tax.
-  'currency': 'RUB'  // local currency code.
 });
 
 ga('ecommerce:addItem', {
@@ -51,17 +50,15 @@ ga('ecommerce:addItem', {
   'category': 'Категория',         // Category or variation.
   'price': '500',                 // Unit price.
   'quantity': '2',                   // Quantity.
-  'currency': 'RUB'  // local currency code.
  });
 
  ga('ecommerce:addItem', {
-  'id': 'MK111',                     // Transaction ID. Required.
+  'id': 'MK112',                     // Transaction ID. Required.
   'name': 'Товар 2',    // Product name. Required.
   'sku': '124',                 // SKU/code.
   'category': 'Категория',         // Category or variation.
   'price': '300',                 // Unit price.
   'quantity': '1',                   // Quantity.
-  'currency': 'RUB'  // local currency code.
 });
 
 ga('ecommerce:send');
