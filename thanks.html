@@ -11,8 +11,6 @@
 
   ga('create', 'UA-45799833-2', 'auto');
   ga('send', 'pageview');
-  ga('require', 'ecommerce');
-
 </script>
 <!-- /GoogleAnalytics counter -->
 
@@ -35,6 +33,7 @@
 </ol>
 
 <script>
+ga('require', 'ecommerce');
 ga('ecommerce:addTransaction', {
   'id': 'MK112',                     // Transaction ID. Required.
   'affiliation': 'Mikhail Komkov Magazine',   // Affiliation or store name.
