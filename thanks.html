@@ -10,8 +10,8 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-45799833-2', 'auto');
-  ga('require', 'ecommerce');
   ga('send', 'pageview');
+  ga('require', 'ecommerce');
 
 </script>
 <!-- /GoogleAnalytics counter -->
@@ -23,22 +23,41 @@
 
 <h1>Спасибо за заказ</h1>
 
+<ol>
+<li>
+Товар 1 --- 500 рублей --- 2 штуки
+</li>li>
+<li>
+Товар 2 --- 300 рублей --- 1 штука
+</li>
+</ol>
+
 <script>
 ga('ecommerce:addTransaction', {
-  'id': 'MK111',                     // Transaction ID. Required.
+  'id': 'MK112',                     // Transaction ID. Required.
   'affiliation': 'Mikhail Komkov Magazine',   // Affiliation or store name.
-  'revenue': '350',               // Grand Total.
-  'shipping': '150',                  // Shipping.
-  'tax': '63',                     // Tax.
+  'revenue': '1300',               // Grand Total.
+  'shipping': '',                  // Shipping.
+  'tax': '',                     // Tax.
   'currency': 'RUB'  // local currency code.
 });
 
 ga('ecommerce:addItem', {
-  'id': 'MK111',                     // Transaction ID. Required.
+  'id': 'MK112',                     // Transaction ID. Required.
   'name': 'Товар 1',    // Product name. Required.
-  'sku': 'DD23444',                 // SKU/code.
-  'category': 'Книги',         // Category or variation.
-  'price': '350',                 // Unit price.
+  'sku': '123',                 // SKU/code.
+  'category': 'Категория',         // Category or variation.
+  'price': '500',                 // Unit price.
+  'quantity': '2',                   // Quantity.
+  'currency': 'RUB'  // local currency code.
+ });
+
+ ga('ecommerce:addItem', {
+  'id': 'MK111',                     // Transaction ID. Required.
+  'name': 'Товар 2',    // Product name. Required.
+  'sku': '124',                 // SKU/code.
+  'category': 'Категория',         // Category or variation.
+  'price': '300',                 // Unit price.
   'quantity': '1',                   // Quantity.
   'currency': 'RUB'  // local currency code.
 });
