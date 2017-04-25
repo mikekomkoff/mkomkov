@@ -17,6 +17,36 @@
 <!-- /GoogleAnalytics counter -->
 </head>
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43561984 = new Ya.Metrika({
+                    id:43561984,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43561984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <a href="index.html">Главная</a><br />
 <a href="list.html">Список товаров</a><br />
 <a href="cart.html">Корзина</a><br />
@@ -30,6 +60,27 @@
 
 <a href="thanks.html"><button>Оформить заказ</button></a>
 
+<script>
+ga(function(tracker) {
+  var clientId = tracker.get('clientId');
+  ga('send', 'event', 'system', 'clientid', {
+  nonInteraction: true, 'dimension3': clientId
+  });
+  
+  var yaParams = {'clientid': clientId};
+  if (typeof(yaCounter43561984)=="object"){
+  yaCounter43561984.userParams(yaParams);
+  yaCounter43561984.params(yaParams);
+  } else { 
+  setTimeout(function() { 
+    if (typeof(yaCounter43561984)=="object"){
+    yaCounter43561984.userParams(yaParams);
+    yaCounter43561984.params(yaParams);
+    }
+  }, 2000);
+}
+});
+</script>
 
 </body>
 </html>
