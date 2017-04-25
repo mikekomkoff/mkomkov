@@ -69,22 +69,20 @@ ga(function(tracker) {
   ga('send', 'event', 'system', 'clientid', {
   nonInteraction: true, 'dimension3': clientId
   });
-
+  
   var yaParams = {'clientid': clientId};
-if (typeOf(yaCounter43561984)=="object"){
-  yaCounter43561984.userParams(yaParams);
+  if (typeof(yaCounter43561984)=="object"){
+  yaCounter343561984.userParams(yaParams);
   yaCounter43561984.params(yaParams);
-} else {
-	setTimeout (function()) {
-	if (typeOf(yaCounter43561984)=="object"){
-var yaParams = {'clientid': clientId};
-  yaCounter43561984.userParams(yaParams);
-  yaCounter43561984.params(yaParams);
-}
-}, 2000);
+  } else { 
+  setTimeout(function() { 
+    if (typeof(yaCounter43561984)=="object"){
+    yaCounter43561984.userParams(yaParams);
+    yaCounter43561984.params(yaParams);
+    }
+  }, 2000);
 }
 });
-</script>
 
 
 
