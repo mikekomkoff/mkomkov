@@ -97,6 +97,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="col-md-8">
         <div class="btn-group" data-toggle="buttons">
           <button id='addToCart' class="btn btn-success">Add To Cart</button>
+          <script>addToCart.onclick = function () {
+          dataLayer.push({
+  "event": "addToCart",
+  "ecommerce": {
+    "currencyCode": "USD",
+    "add": {
+      "products": [{
+        "id": "9bdd2",
+        "name": "Compton T-Shirt / Товар 3",
+        "price": "44.00",
+        "brand": "Compton",
+        "category": "T-Shirts",
+        "variant": "red",
+        "dimension1": "M",
+        "position": 0,
+        "quantity": 1
+      }]
+    }
+  }
+});
+        };
+          </script>
           <button class="GA-tracking btn btn-default" id="GA-addToCart-9bdd2" type="button">
             <span class="glyphicon glyphicon-info-sign"></span>
           </button>
