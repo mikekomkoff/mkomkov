@@ -60,6 +60,32 @@
 <a href="tovar2.html">Товар 2</a>
 
 <script>
+ga('require', 'ec');
+
+ga('ec:addImpression', {
+  'id': 'P12345',                   // Product details are provided in an impressionFieldObject.
+  'name': 'Android Warhol T-Shirt',
+  'category': 'Apparel/T-Shirts',
+  'brand': 'Google',
+  'variant': 'black',
+  'list': 'catalog',
+  'position': 1                     // 'position' indicates the product position in the list.
+});
+
+ga('ec:addImpression', {
+  'id': 'P67890',
+  'name': 'YouTube Organic T-Shirt',
+  'category': 'Apparel/T-Shirts',
+  'brand': 'YouTube',
+  'variant': 'gray',
+  'list': 'catalog',
+  'position': 2
+});
+
+ga('send', 'event', 'eEC', 'list',{nonInteraction: true});
+</script>
+
+<script>
 ga(function(tracker) {
   var clientId = tracker.get('clientId');
   ga('send', 'event', 'system', 'clientid', {
