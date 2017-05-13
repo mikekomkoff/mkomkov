@@ -1,0 +1,119 @@
+
+<html>
+<head>
+<title>Спасибо</title>
+<!-- Google Analytics counter -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45799833-2', 'auto');
+  ga('set', 'dimension1', 'Главная - Спасибо за заказ');
+  ga('set', 'dimension2', 'Спасибо');
+  ga('set', 'contentGroup1', 'Спасибо за заказ');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics counter -->
+
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43561984 = new Ya.Metrika({
+                    id:43561984,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43561984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<a href="index.html">Главная</a><br />
+<a href="list.html">Список товаров</a><br />
+
+<p class="breadcrumbs">Хлебные крошки: <a href="index.html">Главная</a> - Спасибо за заказ
+
+<h1>Спасибо за заказ</h1>
+
+<h2>Номер заказа MK-080417-1</h2>
+
+<ol>
+<li>
+Товар 1 --- 500 рублей --- 2 штуки
+</li>
+<li>
+Товар 2 --- 300 рублей --- 1 штука
+</li>
+</ol>
+
+<script>
+ga('require', 'ec');
+
+ga('ec:addProduct', {
+  'id': 'P12345',
+  'name': 'Android Warhol T-Shirt',
+  'category': 'Apparel',
+  'brand': 'Google',
+  'variant': 'black',
+  'price': '29.20',
+  'quantity': 1
+});
+
+// Transaction level information is provided via an actionFieldObject.
+ga('ec:setAction', 'purchase', {
+  'id': 'T12345',
+  'affiliation': 'Google Store - Online',
+  'revenue': '37.39',
+  'tax': '2.85',
+  'shipping': '5.34',
+  'coupon': 'SUMMER2013'    // User added a coupon at checkout.
+});
+
+ga('send', 'event', 'eEC', 'purchase');     // Send transaction data with initial pageview.
+</script>
+
+<script>
+ga(function(tracker) {
+  var clientId = tracker.get('clientId');
+  ga('send', 'event', 'system', 'clientid', {
+  nonInteraction: true, 'dimension3': clientId
+  });
+  
+  var yaParams = {'clientid': clientId};
+  if (typeof(yaCounter43561984)=="object"){
+  yaCounter43561984.userParams(yaParams);
+  yaCounter43561984.params(yaParams);
+  } else { 
+  setTimeout(function() { 
+    if (typeof(yaCounter43561984)=="object"){
+    yaCounter43561984.userParams(yaParams);
+    yaCounter43561984.params(yaParams);
+    }
+  }, 2000);
+}
+});
+</script>
+
+</body>
+</html>
