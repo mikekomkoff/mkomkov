@@ -54,9 +54,13 @@
 <a href="cart.html">Корзина</a><br />
 <p class="breadcrumbs">Хлебные крошки: <a href="index.html">Главная</a> - <a href="/list.html">Список товаров</a> - <a href="/tovar1.html">Товар 1</a>
 <h1>Товар 1</h1>
-
-
-<button>Купить</button>
+<script>
+ga('require', 'ec');
+ga('ec:addProduct', {   'id': 'P12345',   'name': 'Android Warhol T-Shirt',   'category': 'Apparel',   'brand': 'Google',   'variant': 'black' });
+ga('ec:setAction', 'detail');
+ga('send', 'event', 'eEC', 'detail',{nonInteraction: true});
+</script>
+<button onclick="ga('ec:addProduct', {   'id': 'P12345',   'name': 'Android Warhol T-Shirt',   'category': 'Apparel',   'brand': 'Google',   'variant': 'black' });ga('ec:setAction', 'add');ga('send', 'event', 'eEC', 'add');">Купить</button>
 
 <script>
 ga(function(tracker) {
