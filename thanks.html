@@ -68,34 +68,29 @@
 </ol>
 
 <script>
-ga('require', 'ecommerce');
-ga('ecommerce:addTransaction', {
-  'id': 'MK112',                     // Transaction ID. Required.
-  'affiliation': 'Mikhail Komkov Magazine',   // Affiliation or store name.
-  'revenue': '1300',               // Grand Total.
-  'shipping': '',                  // Shipping.
-  'tax': ''                     // Tax.
+ga('require', 'ec');
+
+ga('ec:addProduct', {
+  'id': 'P12345',
+  'name': 'Android Warhol T-Shirt',
+  'category': 'Apparel',
+  'brand': 'Google',
+  'variant': 'black',
+  'price': '29.20',
+  'quantity': 1
 });
 
-ga('ecommerce:addItem', {
-  'id': 'MK112',                     // Transaction ID. Required.
-  'name': 'Товар 1',    // Product name. Required.
-  'sku': '123',                 // SKU/code.
-  'category': 'Категория',         // Category or variation.
-  'price': '500',                 // Unit price.
-  'quantity': '2'                   // Quantity.
- });
-
- ga('ecommerce:addItem', {
-  'id': 'MK112',                     // Transaction ID. Required.
-  'name': 'Товар 2',    // Product name. Required.
-  'sku': '124',                 // SKU/code.
-  'category': 'Категория',         // Category or variation.
-  'price': '300',                 // Unit price.
-  'quantity': '1'                   // Quantity.
+// Transaction level information is provided via an actionFieldObject.
+ga('ec:setAction', 'purchase', {
+  'id': 'T12345',
+  'affiliation': 'Google Store - Online',
+  'revenue': '37.39',
+  'tax': '2.85',
+  'shipping': '5.34',
+  'coupon': 'SUMMER2013'    // User added a coupon at checkout.
 });
 
-ga('ecommerce:send');
+ga('send', 'event', 'eEC', 'purchase');     // Send transaction data with initial pageview.
 </script>
 
 <script>
