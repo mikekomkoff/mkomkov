@@ -58,8 +58,13 @@
 
 <h1>Товар 2</h1>
 
-
-<button>Купить</button>
+<script>
+ga('require', 'ec');
+ga('ec:addProduct', {   'id': 'P54321',   'name': 'Товар 2',   'category': 'газета',   'brand': 'Коммерсант'});
+ga('ec:setAction', 'detail');
+ga('send', 'event', 'eEC', 'detail',{nonInteraction: true});
+</script>
+<button onclick="ga('ec:addProduct', {   'id': 'P54321',   'name': 'Товар 2',   'category': 'газета',   'brand': 'Коммерсант'});ga('ec:setAction', 'add');ga('send', 'event', 'eEC', 'add');">Купить</button>
 
 <script>
 ga(function(tracker) {

@@ -65,11 +65,18 @@
 ga('require', 'ec');
 ga('ec:addProduct', {               // Provide product details in an productFieldObject.
   'id': 'P12345',                   // Product ID (string).
-  'name': 'Android Warhol T-Shirt', // Product name (string).
-  'category': 'Apparel',            // Product category (string).
-  'brand': 'Google',                // Product brand (string).
-  'variant': 'black',               // Product variant (string).
-  'price': '29.20',                 // Product price (currency).
+  'name': 'Товар 1', // Product name (string).
+  'category': 'газета',            // Product category (string).
+  'brand': 'Ведомости',                // Product brand (string).  'price': '29.20',                 // Product price (currency).
+  'quantity': 2                     // Product quantity (number).
+});
+
+ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+  'id': 'P54321',                   // Product ID (string).
+  'name': 'Товар 2', // Product name (string).
+  'category': 'газета',            // Product category (string).
+  'brand': 'Коммерсант',                // Product brand (string).
+  'price': '300',                 // Product price (currency).
   'quantity': 1                     // Product quantity (number).
 });
 
