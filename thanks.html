@@ -72,22 +72,23 @@ ga('require', 'ec');
 
 ga('ec:addProduct', {
   'id': 'P12345',
-  'name': 'Android Warhol T-Shirt',
-  'category': 'Apparel',
-  'brand': 'Google',
-  'variant': 'black',
-  'price': '29.20',
+  'name': 'Товар 1',
+  'price': '500',
+  'quantity': 2
+});
+
+ga('ec:addProduct', {
+  'id': 'P54321',
+  'name': 'Товар 2',
+  'price': '300',
   'quantity': 1
 });
 
 // Transaction level information is provided via an actionFieldObject.
 ga('ec:setAction', 'purchase', {
   'id': 'T12345',
-  'affiliation': 'Google Store - Online',
-  'revenue': '37.39',
-  'tax': '2.85',
-  'shipping': '5.34',
-  'coupon': 'SUMMER2013'    // User added a coupon at checkout.
+  'affiliation': 'MKOMKOV STORE',
+  'revenue': '1300',
 });
 
 ga('send', 'event', 'eEC', 'purchase');     // Send transaction data with initial pageview.
