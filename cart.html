@@ -7,10 +7,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-45799833-2', 'auto');
   ga('send', 'pageview');
-
 </script>
 <!-- /GoogleAnalytics counter -->
 </head>
@@ -72,7 +70,8 @@ var google_remarketing_only = true;
 <a href="tovar1.html">Товар 1</a><br />
 <a href="tovar2.html">Товар 2</a><br />
 
-<a href="thanks.html"><button>Оформить заказ</button></a>
+<a href="thanks.html"><button>Оформить заказ</button></a><br />
+<button id="butdel" onclick="ga('send', 'event', 'кнопка', 'удалить товар', {nonInteraction: true})">Удалить товар</button><br />
 
 <script>
 ga('require', 'ec');
