@@ -23,6 +23,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1>Товар 1</h1>
 <p>500 Руб.</p><br />
 <button class="buy" onclick=dataLayer.push({'eCategory':'button','eAction':'buy','eLabel':'','eNI':'0','event':'GAEvent'});>Купить</button>
-
+<script>
+(dataLayer = window.dataLayer || []).push({
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'id': 'T12345',
+        'affiliation': 'MKOMKOV.ru - Store',
+        'revenue': '500',
+        'tax':'90',
+        'shipping': '50',
+      },
+      'products': [{
+        'name': 'Товар 1',
+        'id': '12345',
+        'price': '500',
+        'brand': 'MKOMKOV',
+        'category': 'Analytics',
+        'variant': 'GA',
+        'quantity': 1,
+    }]
+       },
+    }
+  },
+    'event': 'GAEventEC',
+	'eCategory':'eEC', 
+    'eAction':'purchase',
+    'eLabel':'',
+    'eNI':'0',
+});
+</script>
 </body>
 </html>
